@@ -1,0 +1,70 @@
+  $(document).ready(function() {
+        $("#test").click(function(){
+            $.get("/ajaxtest",function(data,status){
+                alert(data[0].email);
+            });
+        });
+    });
+
+
+    $(document).ready(function() {
+        $("#buts").click(function(){
+            var em={'id':2,'email':'oooooooo'};
+            $.post("/jq",JSON.stringify(em),function(data,status){
+
+            });
+        });
+    });
+
+//    Content-Type: application/json
+
+
+function ggg() {
+    var ema={id:'2',email:'iiiiiii'};
+var jsn=JSON.stringify(ema);
+
+    $.post ({
+        url: '/jq',
+        type: "POST",
+        data: jsn,
+        dataType: "json",
+        contentType: "application/json; charset=utf-8",
+        success: function(){
+            alert("good")//
+        }
+    });}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        function processForm(  ){
+            alert("lllllllllll");
+            var ema={id:'2',email:'qqqqqqqqqqqqqqqqqqqqq'};
+            var jsn=JSON.stringify(ema);
+            $.ajax({
+                url: '/jq',
+                dataType: 'json',
+                type: 'post',
+                contentType: "application/json; charset=utf-8",
+                data: jsn,
+                success: function( data, textStatus, jQxhr ){
+                    alert(data.email);
+                },
+                error: function( jqXhr, textStatus, errorThrown ){
+               alert(jqXhr+"   "+ textStatus+"   "+errorThrown)
+                }
+            });
+
+            e.preventDefault();
+        }

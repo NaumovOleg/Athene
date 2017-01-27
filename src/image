@@ -1,0 +1,22 @@
+  if (multipartFile == null) {
+        }
+        System.out.println("0========================================");
+        String path = System.getProperty("catalina.home") + "/resources/images/" + multipartFile.getOriginalFilename();
+        System.out.println("1=====================");
+        File file = new File(path);
+        System.out.println("2=====================");
+        try {
+            file.mkdirs();
+            System.out.println("3=====================");
+            try {
+                FileUtils.cleanDirectory
+                        (new File(System.getProperty("catalina.home") + "/resources/images/" + "/"));
+                System.out.println("4=====================");
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+            System.out.println("5=====================");
+            multipartFile.transferTo(file);
+            System.out.println("6=====================");
+        } catch (IOException e) {
+            System.out.println("error with file");
