@@ -2,55 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1f17978f-d571-4c7c-8c6b-715f69072437" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Controllers" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Security" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/WEBCONFIG" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/image" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/Dump_classes/FieClassImpl.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/Dump_classes/FileClass.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/Dump_classes/Phhoto.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/Dump_classes/UserDetailsServiceImpl.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/Dump_classes/UserValidator.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/Dump_classes/User_Controller.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/Dump_classes/ValiUSer/MyException.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/Dump_classes/ValiUSer/UserValidator.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/Dump_classes/ValiUSer/ValidationWithException.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/Dump_classes/registerUser.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/SpringClasses/Dao/DaoImpl/writrePhotoImpl.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/SpringClasses/Dao/writePhoto.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/properties/messages.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/pattern.txt" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/SpringClasses/Controllers/ChatController.java" afterPath="$PROJECT_DIR$/src/main/java/SpringClasses/Controllers/ChatController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/SpringClasses/Controllers/ControllerForPages.java" afterPath="$PROJECT_DIR$/src/main/java/SpringClasses/Controllers/ControllerForPages.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/SpringClasses/Controllers/DefaultController.java" afterPath="$PROJECT_DIR$/src/main/java/SpringClasses/Controllers/DefaultController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/SpringClasses/Controllers/GlobalControllerException.java" afterPath="$PROJECT_DIR$/src/main/java/SpringClasses/Controllers/GlobalControllerException.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/SpringClasses/Controllers/StaffController.java" afterPath="$PROJECT_DIR$/src/main/java/SpringClasses/Controllers/StaffController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/SpringClasses/Controllers/UserBlanksControllers.java" afterPath="$PROJECT_DIR$/src/main/java/SpringClasses/Controllers/UserBlanksControllers.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/SpringClasses/Controllers/UserController.java" afterPath="$PROJECT_DIR$/src/main/java/SpringClasses/Controllers/UserController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/SpringClasses/Controllers/subScribeController.java" afterPath="$PROJECT_DIR$/src/main/java/SpringClasses/Controllers/subScribeController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/SpringClasses/Dao/ChatDao.java" afterPath="$PROJECT_DIR$/src/main/java/SpringClasses/Dao/ChatDao.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/SpringClasses/Dao/DaoImpl/ChatDaoIml.java" afterPath="$PROJECT_DIR$/src/main/java/SpringClasses/Dao/DaoImpl/ChatDaoIml.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/SpringClasses/Dao/DaoImpl/SubscribedEmailsDaoImpl.java" afterPath="$PROJECT_DIR$/src/main/java/SpringClasses/Dao/DaoImpl/SubscribedEmailsDaoImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/SpringClasses/Dao/DaoImpl/USerDAoImpl.java" afterPath="$PROJECT_DIR$/src/main/java/SpringClasses/Dao/DaoImpl/USerDAoImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/SpringClasses/Dao/DaoImpl/UsersBlankDaoImpl.java" afterPath="$PROJECT_DIR$/src/main/java/SpringClasses/Dao/DaoImpl/UsersBlankDaoImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/SpringClasses/Dao/TestimonialsDao.java" afterPath="$PROJECT_DIR$/src/main/java/SpringClasses/Dao/TestimonialsDao.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/SpringClasses/Dao/UserDao.java" afterPath="$PROJECT_DIR$/src/main/java/SpringClasses/Dao/UserDao.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/SpringClasses/Dao/UsersBlankDao.java" afterPath="$PROJECT_DIR$/src/main/java/SpringClasses/Dao/UsersBlankDao.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/SpringClasses/DataTranferObject/ChatsTransfer.java" afterPath="$PROJECT_DIR$/src/main/java/SpringClasses/DataTranferObject/ChatsTransfer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/SpringClasses/DataTranferObject/TestimonialsTransfer.java" afterPath="$PROJECT_DIR$/src/main/java/SpringClasses/DataTranferObject/TestimonialsTransfer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/SpringClasses/Entety/SubscribedEmails.java" afterPath="$PROJECT_DIR$/src/main/java/SpringClasses/Entety/SubscribedEmails.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/SpringClasses/ExtraClasses/ContactUs.java" afterPath="$PROJECT_DIR$/src/main/java/SpringClasses/ExtraClasses/ContactUs.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/SpringClasses/ExtraClasses/TestClass.java" afterPath="$PROJECT_DIR$/src/main/java/SpringClasses/ExtraClasses/TestClass.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/SpringClasses/JavaConfig/MyWebInitializer.java" afterPath="$PROJECT_DIR$/src/main/java/SpringClasses/JavaConfig/MyWebInitializer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/SpringClasses/JavaConfig/PersistenceJPAConfig.java" afterPath="$PROJECT_DIR$/src/main/java/SpringClasses/JavaConfig/PersistenceJPAConfig.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/SpringClasses/JavaConfig/Secirity/AppSecurityConfig.java" afterPath="$PROJECT_DIR$/src/main/java/SpringClasses/JavaConfig/Secirity/AppSecurityConfig.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/SpringClasses/JavaConfig/Secirity/SecurutiInitializer.java" afterPath="$PROJECT_DIR$/src/main/java/SpringClasses/JavaConfig/Secirity/SecurutiInitializer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/SpringClasses/JavaConfig/SpringWebConfig.java" afterPath="$PROJECT_DIR$/src/main/java/SpringClasses/JavaConfig/SpringWebConfig.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/SpringClasses/Service/UserServiceIml/ChatServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/SpringClasses/Service/UserServiceIml/ChatServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/SpringClasses/Service/UserServiceIml/SubscribedEmailesServiceimpl.java" afterPath="$PROJECT_DIR$/src/main/java/SpringClasses/Service/UserServiceIml/SubscribedEmailesServiceimpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/SpringClasses/Service/UserServiceIml/UserServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/SpringClasses/Service/UserServiceIml/UserServiceImpl.java" />
     </list>
     <ignored path=".idea/dataSources.local.xml" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -148,7 +100,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UserServiceImpl.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="UserServiceImpl.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/SpringClasses/Service/UserServiceIml/UserServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-318">
@@ -160,6 +112,18 @@
                 <element signature="e#1597#1598#0" expanded="true" />
                 <element signature="e#2287#2288#0" expanded="true" />
                 <element signature="e#2331#2332#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DefaultController.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/SpringClasses/Controllers/DefaultController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="29">
+              <caret line="27" column="4" selection-start-line="27" selection-start-column="4" selection-end-line="27" selection-end-column="4" />
+              <folding>
+                <marker date="1485509157497" expanded="true" signature="44:985" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -221,7 +185,6 @@
         <option value="$PROJECT_DIR$/src/main/webapp/resources/css/style.css" />
         <option value="$PROJECT_DIR$/src/main/java/SpringClasses/Controllers/ChatController.java" />
         <option value="$PROJECT_DIR$/src/main/java/SpringClasses/Controllers/ControllerForPages.java" />
-        <option value="$PROJECT_DIR$/src/main/java/SpringClasses/Controllers/DefaultController.java" />
         <option value="$PROJECT_DIR$/src/main/java/SpringClasses/Controllers/GlobalControllerException.java" />
         <option value="$PROJECT_DIR$/src/main/java/SpringClasses/Controllers/StaffController.java" />
         <option value="$PROJECT_DIR$/src/main/java/SpringClasses/Controllers/subScribeController.java" />
@@ -250,6 +213,7 @@
         <option value="$PROJECT_DIR$/src/main/java/SpringClasses/Service/UserServiceIml/SubscribedEmailesServiceimpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/SpringClasses/Service/UserServiceIml/UserServiceImpl.java" />
         <option value="$PROJECT_DIR$/json" />
+        <option value="$PROJECT_DIR$/src/main/java/SpringClasses/Controllers/DefaultController.java" />
       </list>
     </option>
   </component>
@@ -1300,7 +1264,7 @@
       <workItem from="1485360209828" duration="2224000" />
       <workItem from="1485381698265" duration="19000" />
       <workItem from="1485425811162" duration="2925000" />
-      <workItem from="1485505813209" duration="2014000" />
+      <workItem from="1485505813209" duration="2089000" />
     </task>
     <task id="LOCAL-00001" summary="Removed some bugs">
       <created>1485506414238</created>
@@ -1309,11 +1273,18 @@
       <option name="project" value="LOCAL" />
       <updated>1485506414238</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="I have removed unnecessary code">
+      <created>1485509121625</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1485509121625</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="342516000" />
+    <option name="totallyTimeSpent" value="342591000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1326,11 +1297,11 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.38039866" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4893617" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4893617" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.84288055" sideWeight="0.5060514" order="7" side_tool="true" content_ui="tabs" />
@@ -1408,7 +1379,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Removed some bugs" />
-    <option name="LAST_COMMIT_MESSAGE" value="Removed some bugs" />
+    <MESSAGE value="I have removed unnecessary code" />
+    <option name="LAST_COMMIT_MESSAGE" value="I have removed unnecessary code" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1488,14 +1460,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="138">
           <caret line="99" column="17" selection-start-line="99" selection-start-column="17" selection-end-line="99" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/SpringClasses/Controllers/DefaultController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="55" column="54" selection-start-line="55" selection-start-column="54" selection-end-line="55" selection-end-column="54" />
           <folding />
         </state>
       </provider>
@@ -1864,6 +1828,16 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/SpringClasses/Controllers/DefaultController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="29">
+          <caret line="27" column="4" selection-start-line="27" selection-start-column="4" selection-end-line="27" selection-end-column="4" />
+          <folding>
+            <marker date="1485509157497" expanded="true" signature="44:985" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>

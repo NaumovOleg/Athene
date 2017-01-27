@@ -1,6 +1,6 @@
 package SpringClasses.Controllers;
 
-import SpringClasses.Dao.writePhoto;
+
 import SpringClasses.Entety.Testimonials;
 import SpringClasses.Entety.User;
 import SpringClasses.Service.TestimonialsService;
@@ -18,26 +18,17 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import java.io.IOException;
 import java.security.Principal;
 import java.util.List;
 
 @Controller
 public class DefaultController {
-    @Autowired
-    writePhoto writePhoto;
+
     @Autowired
     UserService userService;
     @Autowired
     TestimonialsService testimonialsService;
     ObjectMapper mapper = new ObjectMapper();
-    @RequestMapping(value = "/saveImage", method = RequestMethod.POST)
-    @ResponseBody
-    public String saveim(@RequestBody String  multipartFile) throws IOException {
-        writePhoto.write(multipartFile.getBytes());
-        String file=multipartFile.getBytes().toString();
-        return "Main";
-    }
 
     @RequestMapping(value = "/logout", method = RequestMethod.GET)
     public String logoutPage(HttpServletRequest request, HttpServletResponse response) {
