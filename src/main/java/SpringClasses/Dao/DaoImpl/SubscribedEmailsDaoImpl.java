@@ -23,8 +23,6 @@ public class SubscribedEmailsDaoImpl implements SubscribedEnmailsDao{
     public void addSubscribedemail(String mail) {
         SubscribedEmails emails=new SubscribedEmails();
         emails.setEmail(mail);
-        System.out.println(mail);
-        System.out.println("dao-------------------------------------------------------------");
         entityManager.persist(emails);
     }
 

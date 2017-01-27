@@ -1,8 +1,5 @@
 package SpringClasses.ExtraClasses;
 
-/**
- * Created by Олег on 05.01.2017.
- */
 public class ContactUs {
     private String name;
     private String email;

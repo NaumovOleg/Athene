@@ -15,8 +15,6 @@ import java.security.Principal;
 import java.util.LinkedList;
 import java.util.List;
 
-import static org.springframework.data.jpa.domain.AbstractPersistable_.id;
-
 @Controller
 @RequestMapping(value = "/chat")
 public class ChatController {
@@ -29,34 +27,17 @@ public class ChatController {
     public
     @ResponseBody
     String addmasFromUser(@RequestBody String mass, Principal principal) {
-        System.out.println(mass+"  controller===================================");
         chatService.addMassageFromUser(principal.getName(), mass);
-        System.out.println("controller===================================");
         return mass;
     }
-
-
-
-
-
-//    @RequestMapping(value = "/getUsersMassagesAtHisPage", method = RequestMethod.GET)
-//    @ResponseBody
-//    public List<ChatClass> getMassages(Principal principal) {
-//        return chatService.getUsersMassages(principal.getName());
-//    }
 
     @RequestMapping(value = "/getUsersmassages/{id}", method = RequestMethod.GET)
     public String getUsersmassages(@PathVariable("id") String id, Model model) {
         List<User> allusers=userService.getAllUsers();
-        System.out.println(allusers.size()+"ppppppppppppppppppppppppppppp");
         model.addAttribute("allUsers",allusers);
         List<ChatClass> chats = chatService.getUsersMassages(Integer.valueOf(id));
         System.out.println(chats.size()+"chat size----------------------------------------");
         List<ChatsTransfer> chatsTransferList=new LinkedList<>();
-//        if(!chats.isEmpty()){
-
-        System.out.println(id+" tttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttt");
-
         for (ChatClass chatClass : chats) {
             chatsTransferList.add(new ChatsTransfer(chatClass));
             System.out.println(chatClass.getUser().getId());
@@ -70,28 +51,15 @@ public class ChatController {
 
     @RequestMapping(value = "/sendMassageToUser/{userId}" ,method = RequestMethod.GET)
     public String sendMassageFromUsToUser(@PathVariable("userId") String userId,@RequestParam("massage")String massage,Model model){
-        System.out.println(userId+"-userId-------------------------------------------------------");
-        System.out.println(massage+"=============================================================");
-
         chatService.addmassageFromussToUser(userId,massage);
         List<User> allusers=userService.getAllUsers();
-        System.out.println(allusers.size()+"ppppppppppppppppppppppppppppp");
         model.addAttribute("allUsers",allusers);
         List<ChatClass> chats = chatService.getUsersMassages(Integer.valueOf(userId));
-        System.out.println(chats.size()+"chat size----------------------------------------");
         List<ChatsTransfer> chatsTransferList=new LinkedList<>();
-//        if(!chats.isEmpty()){
-
-        System.out.println(id+" tttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttt");
-
         for (ChatClass chatClass : chats) {
             chatsTransferList.add(new ChatsTransfer(chatClass));
             System.out.println(chatClass.getUser().getId());
         }
-
-        System.out.println("added-------------------------------------------");
-//        }
-
         List<UserBlank> blanks=userService.getUsersBlankByUserId(Integer.valueOf(userId));
         model.addAttribute("usersBlank", blanks);
         model.addAttribute("userId",userService.getUserById(Integer.valueOf(userId)));

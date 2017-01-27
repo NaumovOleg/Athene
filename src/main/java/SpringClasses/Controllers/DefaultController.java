@@ -54,10 +54,6 @@ public class DefaultController {
     public String addTstim(@RequestBody String testim, Principal principal){
         User user=userService.getUser(principal.getName());
         List<Testimonials> list=user.getTestimonial();
-        for (Testimonials testimonials : list) {
-            System.out.println(testimonials.getTestimonial());
-            System.out.println("-------------------------------");
-        }
         testimonialsService.addTestimonial(testim,principal.getName());
         return "good";
     }

@@ -49,13 +49,11 @@ public List<User> getList(String name){
     @Transactional
     public void editUser(User user) {
         entityManager.merge(user);
-        System.out.println("DAO EDITED+++++++++++++++++++++++++++++++++++++++++=");
     }
 
     @Override
     @Transactional
     public List getAllUsers() {
-        System.out.println("dao user ---------------------------------------------");
        return entityManager.createQuery("select u from User as u ").getResultList();
     }
 

@@ -3,10 +3,6 @@ package SpringClasses.DataTranferObject;
 import SpringClasses.Entety.ChatClass;
 
 import java.util.Date;
-
-/**
- * Created by Олег on 14.01.2017.
- */
 public class ChatsTransfer {
     private int id ;
     private String massage;

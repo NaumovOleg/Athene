@@ -34,17 +34,11 @@ public class UserBlanksControllers {
         userService.addUsersBlankByUserEmail(userId, projectName, projectInfo);
         List<User> list = userService.getAllUsers();
         model.addAttribute("allUsers", list);
-        System.out.println("fffffffffffllllllllllllllllllllllllllll0000000000000000000000000000000000000000000000000000000");
         List<ChatClass> chata = chatService.getUsersMassages(Integer.valueOf(userId));
         model.addAttribute("UsersChat", chata);
-        for (ChatClass chatClass : chata) {
-            System.out.println(chatClass.getMassage());
-        }
         List<UserBlank> blanks=userService.getUsersBlankByUserId(Integer.valueOf(userId));
         model.addAttribute("usersBlank", blanks);
         model.addAttribute("userId",userService.getUserById(Integer.valueOf(userId)));
-//        model.addAttribute("userId",chatsTransferList.get(0).getUserId());
-        System.out.println(chata.size() + "fffffffffffuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuu");
         return "AdminPanel";
     }
 
@@ -56,19 +50,13 @@ public class UserBlanksControllers {
         userService.setAccomplishProject(blankId);
         List<User> list = userService.getAllUsers();
         model.addAttribute("allUsers", list);
-        System.out.println("fffffffffffllllllllllllllllllllllllllll0000000000000000000000000000000000000000000000000000000");
         List<ChatClass> chata = chatService.getUsersMassages(Integer.valueOf(userId));
         model.addAttribute("UsersChat", chata);
-        for (ChatClass chatClass : chata) {
-            System.out.println(chatClass.getMassage());
-        }
         List<UserBlank> blanks=userService.getUsersBlankByUserId(Integer.valueOf(userId));
         model.addAttribute("usersBlank", blanks);
        User user= userService.getUserById(Integer.valueOf(userId));
         sendingManager.sendMailaboutaccomplishProject(user.getName(),user.getEmail(),  userService.blankNameByBlankId(blankId));
         model.addAttribute("userId",user);
-
-
         return "AdminPanel";
     }
 

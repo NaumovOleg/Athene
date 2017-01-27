@@ -31,7 +31,6 @@ public class subScribeController {
     System.out.println(mail);
    manager.someoneHaveSubscribed(mail);
     subscribedEnmailsService.addSubscribedemail(mail);
-    System.out.println("==========------------------+++++++++++++++++++++++++++++");
 }
 
 
@@ -39,8 +38,6 @@ public class subScribeController {
     @ResponseBody
     public String checkMAilAll(@RequestBody String mail) {
         List<String> maile = mailer.checkEmaiIfExists(mail);
-        System.out.println("llllllllllllllllllllllllllllllllllllllllllllllllllllllllllllll");
-
         System.out.println(subscribedEnmailsService.checkIfExistsThisMail(mail));
         System.out.println(mail);
         if (maile.isEmpty()&& subscribedEnmailsService.checkIfExistsThisMail(mail)) {
@@ -64,13 +61,9 @@ public class subScribeController {
         for (String s : maile) {
             realMAils.add(s);
         }
-
         for (String realMAil : realMAils) {
             maileSender.sendMail("Athene",mail,realMAil);
         }
-
-        System.out.println("llllllllllllllllllllllllllllllllllllllllllllllllllllllllllllll");
-
         return "Admina";
     }
 }

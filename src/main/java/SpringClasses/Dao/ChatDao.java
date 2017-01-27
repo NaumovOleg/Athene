@@ -5,9 +5,6 @@ import SpringClasses.Entety.User;
 
 import java.util.List;
 
-/**
- * Created by Олег on 11.01.2017.
- */
 public interface ChatDao {
     public List<ChatClass> getUsersMassages(int UserId);
     public void addMassage(ChatClass mas);

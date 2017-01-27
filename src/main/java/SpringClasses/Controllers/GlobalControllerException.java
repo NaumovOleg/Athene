@@ -22,22 +22,10 @@ class GlobalControllerException {
         modelAndView.setViewName("OldMain");
         return modelAndView;
     }
-//    @ExceptionHandler(value = NullPointerException.class)
-//    public ModelAndView nullpoin() {
-//        ModelAndView modelAndView = new ModelAndView();
-//        modelAndView.setViewName("Main");
-//        return modelAndView;
-//    }
-
-
-
     @ExceptionHandler(value=EmptyResultDataAccessException.class)
     public String man(){
         return "/Main";
     }
-
-
-
     @ExceptionHandler(NoHandlerFoundException.class)
     public String dealWithNoHandlerFoundException()   {
         return "404";

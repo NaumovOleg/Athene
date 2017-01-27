@@ -18,16 +18,6 @@ import javax.sql.DataSource;
 @EnableWebMvcSecurity
 @EnableGlobalMethodSecurity
 public class AppSecurityConfig extends WebSecurityConfigurerAdapter {
-
-/*    @Bean(name = "dataSource2")
-    public DataSource dataSource() {
-        DriverManagerDataSource dataSource = new DriverManagerDataSource();
-        dataSource.setDriverClassName("com.mysql.jdbc.Driver");
-        dataSource.setUrl("jdbc:mysql://localhost:3306/lynx");
-        dataSource.setUsername("root");
-        dataSource.setPassword("hippi26");
-        return dataSource;
-    }*/
     @Autowired
     private DataSource dataSource;
 @Autowired
@@ -43,26 +33,6 @@ UserServiceImpl userService;
         }
     }
 
-
-
-
-//    @Autowired
-//    public void configureGlobal(AuthenticationManagerBuilder auth) {
-//        try {
-//
-//            auth.inMemoryAuthentication().withUser("user").password("user").roles("USER");
-//
-//            auth.inMemoryAuthentication().withUser("admin").password("admin").roles("ADMIN");
-//            auth.jdbcAuthentication().dataSource(
-//                    dataSource
-//            ).passwordEncoder(passwordEncoder())
-//                    .usersByUsernameQuery(
-//                            "select email ,password ,enabled,email from user where email=?")
-//                    .authoritiesByUsernameQuery(
-//                            "select email,  role  from user where email=?");
-//        } catch (Exception e) {
-//        }
-//    }
 
     @Override
     protected void configure(HttpSecurity http) throws Exception {

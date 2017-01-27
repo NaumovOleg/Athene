@@ -8,9 +8,6 @@ import org.springframework.stereotype.Service;
 
 import java.util.List;
 
-/**
- * Created by Олег on 04.01.2017.
- */
 @Service
 public class SubscribedEmailesServiceimpl implements SubscribedEmailesService {
     @Autowired

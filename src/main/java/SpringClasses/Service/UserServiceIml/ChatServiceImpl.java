@@ -4,7 +4,6 @@ import SpringClasses.Dao.ChatDao;
 import SpringClasses.Dao.UserDao;
 import SpringClasses.Entety.ChatClass;
 import SpringClasses.Entety.User;
-import SpringClasses.Entety.UserBlank;
 import SpringClasses.Service.ChatService;
 import SpringClasses.Service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -42,7 +41,6 @@ public class ChatServiceImpl implements ChatService {
         mass.setReadedByUser(true);
         mass.setMassage(massage);
         mass.setUser(user);
-        System.out.println(massage+"service add massage from user====================================");
         chatDao.addMassage(mass);
     }
 

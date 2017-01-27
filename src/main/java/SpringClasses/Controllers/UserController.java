@@ -32,11 +32,9 @@ public class UserController {
     @ResponseBody
     public String checkMAil(@RequestBody String mail) {
         List<String> maile = mailer.checkEmaiIfExists(mail);
-        System.out.println(mail+"1111111111222222222222222222333333333333333333444444444444444444");
         if (maile.isEmpty()) {
             return "empty";
         }
-
         return "notEmpty";
     }
 
@@ -44,43 +42,24 @@ public class UserController {
     @ResponseBody
     public String addUserEE(@RequestBody String pass
     ) throws IOException {
-        System.out.println("8888888888888888888888888888888888888888");
         USerTRansfer UserTransfer = mapper.readValue(pass, USerTRansfer.class);
         User user = new User(UserTransfer);
         user.setRole("USER");
-//        user.setEnabled(true);
         sendingManager.sendMailAfterRegistrationToUser(user);
-//        sendingManager.sendThatUserWasRegistered(user);
         String passw=user.getPassword();
         user.setPassword(passwordEncoder.encode(passw));
-//        user.setPassword(passw);
         user.setDateOfregistration(new Date());
         userService.addUser(user);
-//        System.out.println("9999999999999999999999999999999999999999999999999999999999999");
-//        Authentication authentication=new UsernamePasswordAuthenticationToken(user.getEmail(),user.getPassword());
         return "addUser";
     }
 
-
-
-    @RequestMapping(value = "/eeeee", method = RequestMethod.POST)
-
-    public String addUserEE(@RequestParam("name") String name,@RequestParam("mail") String mail
-    ) {
-        System.out.println("8888888888888888888888888888888888888888");
-        System.out.println(name);
-        System.out.println("9999999999999999999999999999999999999999999999999999999999999");
-        return "addUser";
-    }
 
     @RequestMapping(value = "/editUser", method = RequestMethod.POST)
 @ResponseBody
     public String aditUser(@RequestBody User user, Principal principal
     ) {
-        System.out.println("111111111111111111111111111111111111111111111111111111111");
         System.out.println(user.getName());
 userService.editUser(principal.getName(),user);
-        System.out.println("1111111111111111111111111111111111111111111111111111111111");
         return "addUser";
     }
 

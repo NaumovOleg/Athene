@@ -43,17 +43,13 @@ public class ControllerForPages {
     @RequestMapping(value = "/Main", method = RequestMethod.GET)
 
     public String main2(Principal principal,Model model) {
-//        List<Testimonials> lista = testimonialsService.getAllTestimonials();
-//        model.addAttribute("testim", lista);
         if (principal != null) {
             User user = userService.getUser(principal.getName());
             model.addAttribute("user", user);
-
             int massCount=chatdao.countOfUsersNewMassages(user);
             if(massCount>=1){
             model.addAttribute("massages",String.valueOf(massCount));}
         }
-
         return "Main";
     }
     @RequestMapping(value = "/profile", method = RequestMethod.GET)
@@ -79,17 +75,10 @@ public class ControllerForPages {
     @RequestMapping(value = "cabinet", method = RequestMethod.GET)
     public String cab(Principal principal, Model model) {
         User user = userService.getUser(principal.getName());
-
-
-        System.out.println("Cabinet=============================================");
-
         List<ChatClass> massages = chatService.getUsersMassages(Integer.valueOf(user.getId()));
         model.addAttribute("userMass", massages);
         chatdao.setReadedMassageByUser(user);
         List<UserBlank> blanks=userService.getUsersBlankByUserEmail(user.getEmail());
-        for (UserBlank blank : blanks) {
-            System.out.println(blank.getProjectNamae()+"----------------------------------------------------------");
-        }
         model.addAttribute("user", user);
         model.addAttribute("usersBlank", blanks);
         return "cabinet";
@@ -104,8 +93,6 @@ public class ControllerForPages {
             if(massCount>=1){
                 model.addAttribute("massages",String.valueOf(massCount));}
         }
-//        List<Testimonials> lista = testimonialsService.getAllTestimonials();
-//        model.addAttribute("testim", lista);
         return "Main";
     }
 
@@ -117,46 +104,25 @@ public class ControllerForPages {
         for (Testimonials testimonialse : testimonialses) {
             test.add(testimonialse.getTestimonial());
         }
-        System.out.println("111111111111111111111111111111111111111");
         String json = null;
         try {
             json = objectMapper.writeValueAsString(testimonialses.get(0));
         } catch (JsonProcessingException e) {
             e.printStackTrace();
         }
-        System.out.println("222222222222222222222222222222222222222222222222");
-        System.out.println(" body =====================================================================");
         System.out.println(json);
         return json;
     }
-
-    @RequestMapping(value = "/denied", method = RequestMethod.GET)
-    public String den() {
-        return "denied";
-    }
-
-
-//    headers = {"Accept-Charset", "UTF-8"}
-//    produces = {"Accept-Charset", "UTF-8"}
-//    consumes = "application/x-www-form-urlencoded;charset=UTF-8"
-//    headers = "content-type=application/json,charset=UTF-8"
-//    headers = {"content-type=application/json,charset=UTF-8"}
-
-
     @RequestMapping(value = "/refreshMassages", method = RequestMethod.GET, produces = {"application/json; charset=UTF-8"})
     @ResponseBody
     public String refresh(
-
             HttpServletResponse servletResponse) {
-        System.out.println("--------------=====================---------------");
         List<Testimonials> list = testimonialsService.getAllTestimonials();
         List<TestimonialsTransfer> testimTranfer = new LinkedList<>();
         for (Testimonials testimonials : list) {
             TestimonialsTransfer test = new TestimonialsTransfer(testimonials);
             testimTranfer.add(test);
         }
-        System.out.println("00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000");
-
         String json = new Gson().toJson(testimTranfer);
         System.out.println(json);
         servletResponse.setContentType("text/html");
@@ -165,20 +131,10 @@ public class ControllerForPages {
         return json;
     }
 
-//    @RequestMapping(value = "/jq", method = RequestMethod.POST)
-//    @ResponseBody
-//    public SubscribedEmails post(@RequestBody SubscribedEmails h) {
-//        System.out.println(h.getEmail() + "  " + h.getId());
-//        System.out.println("=======================-----------------------=======");
-//        return h;
-//    }
-
     @RequestMapping(value = "/admin", method = RequestMethod.GET)
-
     public String admin(Model model) {
       List<User> list=userService.getAllUsers();
       model.addAttribute("allUsers",list);
-        System.out.println("llllllllllllllllllllllllllll0000000000000000000000000000000000000000000000000000000");
         List<ChatClass> chata=chatService.getUsersMassages(Integer.valueOf(list.get(0).getId()));
         List<UserBlank> blanks=userService.getUsersBlankByUserEmail(list.get(0).getEmail());
         model.addAttribute("usersBlank", blanks);
@@ -187,15 +143,13 @@ public class ControllerForPages {
             System.out.println(chatClass.getMassage());
         }
         model.addAttribute("userId",userService.getUserById(list.get(0).getId()));
-//        model.addAttribute("userId",chatsTransferList.get(0).getUserId());
-        System.out.println(chata.size()+"uuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuu");
         return "AdminPanel";
     }
 
     @RequestMapping(value = "/ajaxtest", method = RequestMethod.GET)
     @ResponseBody
     public Set<SubscribedEmails> ajaxTest() {
-        Set<SubscribedEmails> records = new HashSet<SubscribedEmails>();
+        Set<SubscribedEmails> records = new HashSet<>();
         SubscribedEmails sub = new SubscribedEmails();
         sub.setEmail("one email");
         records.add(sub);
@@ -210,9 +164,6 @@ public class ControllerForPages {
     @ResponseBody
     public String pddost(@RequestBody ContactUs h,Principal principal) {
         System.out.println(h.getName()+ "  "+h.getEmail()+" "+h.getText());
-
-        System.out.println("=======================-----------------------=======");
-
         if(principal!=null){
             User user = userService.getUser(principal.getName());
             h.setEmail(user.getEmail());

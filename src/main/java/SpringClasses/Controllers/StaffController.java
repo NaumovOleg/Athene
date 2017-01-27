@@ -16,7 +16,6 @@ public class StaffController {
 
     @RequestMapping(value = "/setStaff" ,method = RequestMethod.POST,produces = {"text/html; charset=UTF-8"})
     @ResponseBody public String setStaff(@RequestBody Staff staff){
-        System.out.println("popijxcnccnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn");
         System.out.println(staff.getDESIGNERS());
         staffService.addOrsetStaff(staff);
       return "good"  ;
@@ -27,18 +26,7 @@ public class StaffController {
     @RequestMapping(value = "/getStaff" ,method = RequestMethod.GET,produces = {"application/json; charset=UTF-8"})
     @ResponseBody    public Staff getStaff(){
         System.out.println("ggggggggggggggggggggggggggggggggggggggggggpopijxcnccnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn");
-Staff staffa=staffService.getStaff();
-        System.out.println("-------------------------------------------------------------------------------");
-        System.out.println("-------------------------------------------------------------------------------");  System.out.println("-------------------------------------------------------------------------------");
-        System.out.println("-------------------------------------------------------------------------------");
-        System.out.println("-------------------------------------------------------------------------------");
-        System.out.println("-------------------------------------------------------------------------------");
-        System.out.println("-------------------------------------------------------------------------------");
-        System.out.println("-------------------------------------------------------------------------------");
-        System.out.println("-------------------------------------------------------------------------------");
-        System.out.println("-------------------------------------------------------------------------------");
-
-        System.out.println(staffa.getDESIGNERS());
+         Staff staffa=staffService.getStaff();
         return staffa;
     }
 }

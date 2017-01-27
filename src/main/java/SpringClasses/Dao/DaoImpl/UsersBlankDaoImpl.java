@@ -26,7 +26,6 @@ public class UsersBlankDaoImpl implements UsersBlankDao{
     @Override
     @Transactional
     public List<UserBlank> getUsersBlankByUsersEmai(String emaila) {
-        System.out.println("Dao UserBlank---------------------------------------------------------");
         return entityManager.createQuery("select userblank from UserBlank  " +
                 "as userblank inner join User as u on userblank.user.id=u.id " +
                 "where u.email=:em").setParameter("em",emaila).getResultList();

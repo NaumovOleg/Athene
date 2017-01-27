@@ -16,10 +16,7 @@ public class MyWebInitializer extends AbstractAnnotationConfigDispatcherServletI
     protected String[] getServletMappings() {
         return new String[] {"/"};
     };
-//        @Override
-//    protected Class<?>[] getRootConfigClasses() {
-//        return null;
-//    };
+
     @Override
     protected Class<?>[] getRootConfigClasses() {
         return new Class[] { AppSecurityConfig.class, PersistenceJPAConfig.class,SpringWebConfig.class, UserServiceImpl.class};
@@ -32,16 +29,4 @@ public class MyWebInitializer extends AbstractAnnotationConfigDispatcherServletI
 
         return new Filter[] { characterEncodingFilter};
     }
-
-
-
-
-//@Override
-//    public void onStartup(ServletContext servletContext) throws ServletException {
-//        FilterRegistration.Dynamic encodingFilter = servletContext.addFilter("encoding-filter", new CharacterEncodingFilter());
-//        encodingFilter.setInitParameter("encoding", "UTF-8");
-//        encodingFilter.setInitParameter("forceEncoding", "true");
-//        encodingFilter.addMappingForUrlPatterns(null, true, "/*");
-//
-//    }
 }

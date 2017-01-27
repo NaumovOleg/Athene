@@ -53,23 +53,4 @@ public class SpringWebConfig extends WebMvcConfigurerAdapter {
         messageSource.setFallbackToSystemLocale(false);
         return messageSource;
     }
-
-
-
-
-
-////
-//    @Bean
-//    public SimpleMappingExceptionResolver exceptionResolver() {
-//        SimpleMappingExceptionResolver exceptionResolver = new SimpleMappingExceptionResolver();
-////        Properties exceptionMappings = new Properties();
-////        exceptionMappings.put("org.springframework.security.authentication.InternalAuthenticationServiceException", "error/error");
-////        exceptionMappings.put("java.lang.IllegalArgumentException", "error/error");
-////        exceptionResolver.setExceptionMappings(exceptionMappings);
-//        Properties statusCodes = new Properties();
-//        statusCodes.put("/views/jsp/404","404");
-////        statusCodes.put("error/error", "500");
-//        exceptionResolver.setStatusCodes(statusCodes);
-//        return exceptionResolver;
-//    }
 }

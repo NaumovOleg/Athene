@@ -4,9 +4,6 @@ import SpringClasses.Entety.Testimonials;
 
 import java.util.Date;
 
-/**
- * Created by Олег on 24.12.2016.
- */
 public class TestimonialsTransfer {
   private  int id;
     private int user_id;
